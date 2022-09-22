@@ -1,9 +1,10 @@
+import Header from "./Header";
 function App() {
-  const name="Sannu";
+ 
   return (
     <div className="App">
      <h1>
-      Hello {name}
+     <Header/>
      </h1>
     </div>
   );
