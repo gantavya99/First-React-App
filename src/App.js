@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
      <h1>
-     <Header/>
+     <Header title = 'Sannu dheere bol'/>
      </h1>
     </div>
   );
