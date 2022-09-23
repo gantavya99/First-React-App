@@ -1,9 +1,14 @@
-const Header=(props)=>{
+import Button from "./button";
+const Header=({title})=>{
     return (
-        <header>
+        
+        <header className='header'>
+            <div className='container'>
             <h1>
-                {props.title}
+                {title}
             </h1>
+            <Button/>
+            </div>
         </header>
     )
 };
