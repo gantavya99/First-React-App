@@ -6,11 +6,10 @@ const Header=({title})=>{
     return (
         <header className='header'>
             <div className='container'>
-            <h1>
+            <h1 className='h1'>
                 {title}
             </h1>
             <Button color='green' text='Add' onClick={onClick} />
-            
             </div>
         </header>
     )

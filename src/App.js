@@ -17,7 +17,7 @@ function App() {
 },
 {
     id:3,
-    text:`Send 20k to Mathco`,
+    text:`Clean room`,
     day:`24th September at 4PM`,
     reminder:true,
 }
