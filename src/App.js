@@ -24,6 +24,9 @@ function App() {
     reminder:true,
 }
  ])
+ const addTask=(task)=>{
+  console.log(object);
+ }
       const deleteTask=(id)=>{
         console.log('Task Deleted')
         setTasks(tasks.filter((task)=>task.id!==id))
