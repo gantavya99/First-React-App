@@ -29,9 +29,21 @@
     font-size:medium;
    
 }
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
 
-
-.btn{
+/* .btn{
     background:#000;
     color:#fff;
     border:none;
@@ -42,7 +54,7 @@
     padding:10px 20px;
     font-size:15px;
     float:right;
-}
+} */
 .task {
     background: #a4a7a531;
     margin: 5px;
@@ -89,5 +101,11 @@
   flex: 2;
   height: 20px;
 }
-
-  
+.btn-block{
+color:white;
+width:100%;
+}
+label{
+  font-weight:600;
+  font-size:large;
+} 

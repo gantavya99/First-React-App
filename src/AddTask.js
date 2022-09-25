@@ -1,6 +1,9 @@
 import React from 'react'
-
+import { useState }from 'react'
 const AddTask = () => {
+    const[text,setText]=useState('');
+    const[day,setDay]=useState('');
+    const[reminder,setReminder]=('');
   return (
     <form class='add-form'>
     <div className='form-control'>
@@ -15,8 +18,8 @@ const AddTask = () => {
     <label>Set Reminder</label>
     <input type='checkbox'/>
     </div>
-    <input type='submit' value='Save Task'
-    classname='btn btn-block'/>
+    <input  type='submit' value='Save Task'
+     className='btn btn-block'/>
     </form>
   )
 }
