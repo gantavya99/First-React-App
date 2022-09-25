@@ -28,8 +28,14 @@ function App() {
         setTasks(tasks.filter((task)=>task.id!==id))
       }
       // const toggleReminder=(id)=>{
-      //   setTasks(tasks.map((task)=>task.id===id?{...task,reminder:!task.reminder}:task))
+      //   console.log(id);
       // }
+      const toggleReminder=(id)=>{
+        setTasks(tasks.map((task)=>
+        task.id===id?
+        {...task,reminder:!task.reminder}:task))
+        console.log(`${id} is the ID`);
+      }
   return (
     <div className="App">
      <h1>
