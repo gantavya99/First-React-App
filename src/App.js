@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from "./Header";
 import Tasks from "./Tasks";
 function App() {
+  
  const [tasks, setTasks]=useState([
   {
     id:1,
@@ -26,11 +27,15 @@ function App() {
         console.log('Task Deleted')
         setTasks(tasks.filter((task)=>task.id!==id))
       }
+      const toggleReminder=(id)=>{
+        console.log(id);
+      }
   return (
     <div className="App">
      <h1>
      <Header/>
-     <Tasks tasks ={tasks} onDelete={deleteTask}/>  
+     {tasks.length>0?<Tasks tasks ={tasks} 
+     onDelete={deleteTask}/>:'No tasks Added'}
      </h1>
     </div>
   );
