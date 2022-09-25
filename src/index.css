@@ -2,7 +2,7 @@
     box-sizing:border-box;
     margin:0;
     padding:0;
-    background-color:rgb(255, 255, 255)
+    
 }
 .App{
     position:absolute;
@@ -10,12 +10,13 @@
     top:50%;
     transform:translate(-50%,-50%);
     overflow:auto;
-    min-height:300px;
-    max-width:500px;
+    /* min-height:300px;
+    max-width:500px; */
     border:2px solid steelblue;
     padding:10px;
     border-radius:5px;
-    
+    width:40%;
+    height:60%;
 }
 .container{
     display:flex;
@@ -43,16 +44,18 @@
     font-size:15px;
     float:right;
 }
-.task-container{
-    
-}
 .task {
-    background: #58766431;
+    background: #a4a7a531;
     margin: 5px;
     padding: 10px 20px;
     cursor: pointer;
-    font-size:medium
+    font-size:medium;
   }
-  .day{
-    background: #dfe5e1;
+  /* .day{
+    background: #ebf0ed;
+  } */
+  .X-icon{
+    color:red;
+    position:fixed;
+    right:10%;
   }

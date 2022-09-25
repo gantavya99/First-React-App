@@ -22,14 +22,18 @@ function App() {
     reminder:true,
 }
  ])
+      const deleteTask=(id)=>{
+        console.log('Task Deleted')
+        setTasks(tasks.filter((task)=>task.id!==id))
+      }
   return (
     <div className="App">
      <h1>
      <Header/>
-     <Tasks tasks ={tasks}/>  
+     <Tasks tasks ={tasks} onDelete={deleteTask}/>  
      </h1>
     </div>
   );
 }
 
-export default App;
+export default App
