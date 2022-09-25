@@ -7,9 +7,10 @@ import { FaTimes } from "react-icons/fa";
                 className={`task ${task.reminder && 'reminder'}`}
                 onDoubleClick={() => onToggle(task.id)}
               >
-            {task.text} <FaTimes className="X-icon" 
-            onClick={()=>onDelete(task.id)} />
-            <div className="day">{task.day}</div>
+            {task.text} 
+            <FaTimes className="X-icon" onClick={()=>onDelete(task.id)} />
+            <div className="day">{task.day}
+            </div>
         </div>
     );
 };
