@@ -1,8 +1,8 @@
 import React from 'react';
-const Task = () => {
+const Task = ({task}) => {
   return (
     <div className='task'>
-        <h3>My Task</h3>
+        {task.text}
         </div>
   )
 }
