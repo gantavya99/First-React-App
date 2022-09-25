@@ -1,5 +1,5 @@
 import Button from "./button";
-const Header=({title})=>{
+const Header=({title,onAdd,showAdd})=>{
     const onClick=()=>{
         console.log('Click');
     }
@@ -9,7 +9,7 @@ const Header=({title})=>{
             <h1 className='h1'>
                 {title}
             </h1>
-            <Button color='green' text='Add' onClick={onClick} />
+            <Button color={showAdd ? 'red' : 'green'} text={showAdd ? 'Close' :'Add'} onClick={onAdd} />
             </div>
         </header>
     )

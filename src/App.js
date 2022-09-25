@@ -3,29 +3,20 @@ import Header from "./Header";
 import Tasks from "./Tasks";
 import AddTask from './AddTask';
 function App() {
-  
+  const [showAddTask,setShowAddTask]=useState(false); 
  const [tasks, setTasks]=useState([
   {
     id:1,
-    text:`Clean out the dustbins`,
-    day:`24th September at 5PM`,
+    text:`Thanks for using this Task Tracker!`,
+    day:`(This is a demo task)`,
     reminder:true,
 },
-{
-    id:2,
-    text:`Fix chair's tyre`,
-    day:`25th September at 8PM`,
-    reminder:false,
-},
-{
-    id:3,
-    text:`Clean room`,
-    day:`24th September at 4PM`,
-    reminder:true,
-}
+
  ])
  const addTask=(task)=>{
-  console.log(object);
+  const id=Math.floor(Math.random()*10000)+1;
+  const newTask={id, ...task}
+  setTasks([...tasks,newTask])
  }
       const deleteTask=(id)=>{
         console.log('Task Deleted')
@@ -43,8 +34,9 @@ function App() {
   return (
     <div className="App">
     
-     <Header/>
-     <AddTask/>
+     <Header onAdd={()=>setShowAddTask(!showAddTask)} 
+     showAdd={showAddTask}/>
+     {showAddTask && <AddTask onAdd={addTask}/>}
      {tasks.length>0?<Tasks tasks ={tasks} 
      onDelete={deleteTask} onToggle={toggleReminder}/>:'No tasks Added'}
      
