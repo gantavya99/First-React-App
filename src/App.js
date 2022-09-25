@@ -26,7 +26,7 @@ function App() {
     <div className="App">
      <h1>
      <Header/>
-     <Tasks tasks ={tasks}/>
+     <Tasks tasks ={tasks}/>  
      </h1>
     </div>
   );
