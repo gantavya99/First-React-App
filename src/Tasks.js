@@ -1,4 +1,5 @@
 import Task from "./Task"
+//Individual task component
 const Tasks=({tasks,onDelete,onToggle})=>{
     return(
         <>
