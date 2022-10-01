@@ -8,7 +8,7 @@ function App() {
   {
     id:1,
     text:`Thanks for using this Task Tracker!`,
-    day:`(This is a demo task!)`,
+    day:`(This is a demo task. Remove it using the red icon at the right side)`,
     reminder:true,
 },
 
